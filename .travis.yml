@@ -1,15 +1,20 @@
 language: python
-
 python:
-  - 3.6.4
+- 3.6.4
 env:
-  - DJANGO=2.0.2
+- DJANGO=2.0.2
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 before_script:
-  - python3 manage.py makemigrations
-  - python3 manage.py migrate
-
+- python3 manage.py makemigrations
+- python3 manage.py migrate
 script:
-  - flake8
-  - python manage.py test
+- flake8
+- python manage.py test
+deploy:
+  provider: heroku
+  api_key:
+    secure: iXmT+63tCbnEvjIf3/eL/WJlsX8UWvBwh4yzS6EDT2F/c2FnjcNCMUgc2BILPJtT0HnrP5tVxc2lDV7RQpztg6NVM/L0JWBTevfEOCJtpm7HplQeHyq9jHl3LCHL7/z9DDJz6mtDaGI0ekfTMSXtwnKPvzCFLwOJPef/37sILeie1KtDKEibRixwmXp3AHeMYtEA7r2EmRrFhBcGivESL0l7F30dxDrdZOTKBp3a+o15MnKh4MlBIsrxSRnejBb1aBGvOGHGcISiH8Z+YWG8H28eIJ/RVuuCYM9PZYZnqvyUJTGsjHEiU8zvYVBypCgUCLmIFKAeoBru9H6KH5zz/B6ch2vbNZeHADQgeqI4FG2VbHZx6ksZarF0Kp4il7vnI1Id2GRTN4eE0SehFSxz8H0vr59ZO+xJWljXTlj4BuJRm73a9MrtOkvALfaFcVF1YjVm4utNTyS7fCGnWQhB+lvFbJhxuuTtzzUvsMTYNYkpSbEdYCBxZAISACPFO8tPbdI/+4Xn/7OLNHvDlUYtYIEjjlqL+PRwMsIbkMZrpspvIwSnsjxPtM3T/g8NsT8kJqrGYg4ouDiRvuw8zetHikMW9pUr1ZRddTsYTtyNKNa1Q3wWpVN4+e8bHH9w8FBuC5jflUiMJKQ39328QL9h/GbgbWysbJ9lRbiFqhpEn74=
+  app: djrecommerce
+  on:
+    repo: ikbalsingh/DJReCommerce

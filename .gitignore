@@ -114,3 +114,6 @@ venv/
 
 # package-lock.json as we use yarn for dependency management
 package-lock.json
+
+.vscode
+node_modules

@@ -8,12 +8,10 @@ env:
   install:
   - pip install -r requirements.txt
 
+before_script:
+  - python3 manage.py makemigrations
+  - python3 manage.py migrate
+
   script:
   - flake8
-  - python3 manage.py test
-
-  notifications:
-  slack:
-    on_success: always
-    on_failure: always
-    
+  - python manage.py test

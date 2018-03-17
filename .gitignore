@@ -99,3 +99,18 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# SQLite
+db.sqlite3
+*/migrations/*
+*/migrations/__init__.py
+
+# Bundle
+django_server/static/bundles/local
+
+# Python
+*.pyc
+venv/
+
+# package-lock.json as we use yarn for dependency management
+package-lock.json

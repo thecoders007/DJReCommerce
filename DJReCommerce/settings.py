@@ -25,7 +25,8 @@ SECRET_KEY = 'mv93=3sd3ou3*8epsc2203l@#ayj5ik9t^m$38&#+o!i7#7&1w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djrecommerce.herokuapp.com',
+                 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -121,6 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 # Webpack related settings

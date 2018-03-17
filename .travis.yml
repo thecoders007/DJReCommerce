@@ -17,7 +17,7 @@ deploy:
     secure: "f/nAV9sRerIfcG88a7hJnwU9j1bGBrzGT4quULA95HYQPzbAz57uoheOMMx2ogfgPWpkaPSqotCcg3L5bO0zkKL4ulrRWl6fdfI+0b4iuJPLN4zNZ72YqbWi/0x/Ug9ChDNcyPK7+GrlJ7/gpnt4t0TM8L18964W9tzWU/mQ8VSR+BCWVljnO1i+TnC+Iyj7n1UmlGZjal0vqGAGGTgCwWfZIOmpc0uH6apuwxpcJITPsQRFCKPMf+LisAEHQM+bg91RFDSUhONXNKmWuhPvaT5RWKcuLpQN0Sesl7tAsJxvbP0FbzPoyi1TZ9m03EnSomEUT4rI/yhDpwv7kp+AH4Jn846Qz5s1h0xtuJuRSEOaNgKZ4YUlLTyjSBD/VXKmVgDpLiWbB0+22qbRs68KGZ9EfcJ/vlVbk3OVavzAQNERuGQDYwDHGXnInmyxd1RvaSw71jFvmWAXvoop5YDWmWZD1AosiBjBoHrjnINmcj3ugKNL8eyr0XndRqwTBzh/j+SMO0Ji4O69t7TudS0j5qPgwwSfZVn1VzPqIA+mis/YMkNqzahBzBAhMGKltlaVfhuJ6NNk4VEhgydwZJez7gHskBly0Npq7ovW696CXfoE9Xm6MPGYjVFrzcnwIvEJaFvTO/uY6BUzduMUUgWm5ehNCEqMDhZiPLtOF6FMRKE="
   app: djrecommerce
   on:
-    repo: ikbalsingh/DJReCommerce
+    repo: thecoders007/DJReCommerce
   run:
    - "python manage.py makemigrations"
    - "python manage.py migrate"
